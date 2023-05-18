@@ -1,0 +1,162 @@
+body {
+    font-family: 'Open Sans', sans-serif;
+    min-height: 100vh;
+    background-image: url('../images/bg-desktop.svg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-color: hsl(257, 40%, 49%);
+}
+
+.container {
+    max-width: 1320px;
+    margin: 0 auto;
+    height: 100vh;
+}
+
+.wrapper {
+    height: 90%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding: 40px 0;
+    margin: 0 2rem;
+}
+
+.wrapper .main .img-principal {
+    transform: scale(1.6);
+}
+
+.header {
+    margin: 0 -115px;
+}
+
+.header img {
+    width: 190px;
+    padding-bottom: 20px;
+}
+
+.main {
+    display: flex;
+    align-items: center;
+    gap: 40px;
+}
+
+.itens-text {
+    margin-bottom: 80px;
+    padding: 0 105px;
+}
+
+.itens-text h1 {
+    color: #fff;
+    margin-bottom: 20px;
+    font-weight: bold;
+}
+
+.itens-text p {
+    color: #fff;
+    line-height: 1.8rem;
+}
+
+.itens-text .btn-register {
+    margin-top: 15px;
+    text-decoration: none;
+    padding: 13px 50px;
+    border-radius: 25px;
+    box-shadow: 0 8px 17px -8px #000;
+    transition: all 0.3s ease;
+    color: hsl(257, 40%, 49%);
+    ;
+}
+
+.itens-text .btn-register:hover {
+    background-color: hsl(300, 69%, 71%);
+    color: #fff;
+    cursor: pointer;
+}
+
+.social {
+    text-align: right;
+}
+
+.social a i {
+    color: #fff;
+    font-size: 18px;
+    position: relative;
+    justify-content: space-between;
+    transition: all 0.3s ease;
+}
+
+.social a:not(:first-child) {
+    margin-left: 2.4rem;
+}
+
+.social a i::after {
+    content: '';
+    position: absolute;
+    height: 40px;
+    width: 40px;
+    border: 2px solid #fff;
+    border-radius: 50%;
+    left: -15px;
+    bottom: -13px;
+
+}
+
+.social a:hover i {
+    color: hsl(300, 69%, 71%);
+}
+
+.social a i:hover::after {
+    border-color: hsl(300, 69%, 71%);
+}
+
+@media (max-width: 1440px) {
+    .itens-text img {
+        width: 100%;
+    }
+
+    .wrapper .main .img-principal {
+        padding-left: 50px;
+    }
+
+    .header {
+        margin: 0;
+    }
+}
+
+@media (max-width: 768px) {
+
+    .header {
+        margin: 0;
+    }
+
+    .wrapper .main .img-principal {
+        padding-left: 0;
+    }
+
+    .wrapper .main .img-principal {
+        transform: scale(1);
+    }
+
+    .main {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .itens-text h1 {
+        font-size: 26px;
+    }
+
+    .itens-text p {
+        margin-bottom: 25px;
+    }
+
+    .social {
+        text-align: center;
+        padding: 50px;
+    }
+
+    .itens-text a {
+        padding: 10px 70px;
+    }
+}
